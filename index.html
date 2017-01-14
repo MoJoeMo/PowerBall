@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerBall</title>
+  <link rel="stylesheet" href="css/styles.css">    
+  <script src="js/powerball.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+</head>
+<body>
+  <div id="rules">Enter 5 different numbers between 1-59 in the first 5 boxes. <br  />Enter 1 number between 1-35 in the bonus box. <br /> Press the 'PLAY' button.</div>
+
+    <div id="wrapper" class="left">
+        <div >
+            <div class="entries">
+                <input type="text" name="guesses" id="box1" class="guess">
+                <input type="text" name="guesses" id="box2" class="guess">
+                <input type="text" name="guesses" id="box3" class="guess">
+                <input type="text" name="guesses" id="box4" class="guess">
+                <input type="text" name="guesses" id="box5" class="guess">
+                <input type="text" name="guesses" id="box6" class="guess red">
+            </div>
+            <div id="balls" class="ball-display left">
+                 <div class="white"><span id="rnd1"></span></div>
+                 <div class="white"><span id="rnd2"></span></div>
+                 <div class="white"><span id="rnd3"></span></div>
+                 <div class="white"><span id="rnd4"></span></div>
+                 <div class="white"><span id="rnd5"></span></div>
+                 <div class="red"><span id="rndP"></span></div>
+            </div>          
+        </div>        
+    </div><!--end wrapper-->
+    <div id="right">
+        <input type="button" id="btn"  class="push_button" value="Play" onclick="getGuesses()"/>
+          <button id="reset" class="right" value="Reset" onclick="resetgame()">Reset</button>
+    </div>
+
+
+</body>
+</html>
